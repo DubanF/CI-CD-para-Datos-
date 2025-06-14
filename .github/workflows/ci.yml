@@ -35,4 +35,4 @@ jobs:
       - name: 📚 Generate documentation
         run: |
           mkdir -p docs
-          pdoc src --output-dir docs --force
+          pdoc src -o docs
