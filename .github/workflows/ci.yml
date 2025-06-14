@@ -26,7 +26,8 @@ jobs:
           pip install flake8 pytest pdoc
 
       - name: ✅ Run Pytest
-        run: pytest tests/
+        run: PYTHONPATH=. pytest tests/
+
 
       - name: 🧹 Lint with flake8
         run: flake8 src/ --max-line-length=100
